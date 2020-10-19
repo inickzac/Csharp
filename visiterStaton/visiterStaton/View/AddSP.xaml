@@ -1,0 +1,57 @@
+﻿<Window x:Class="visiterStaton.View.AddSP"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:visiterStaton.View"
+        mc:Ignorable="d"
+        Title="AddSP" Height="222.448" Width="806.742">
+    <StackPanel Margin="0,0,171.6,0">
+        <WrapPanel Height="157" VerticalAlignment="Top">
+            <StackPanel >
+                <Label Content="Камера"/>
+                <TextBox Text="{Binding CameraType, ValidatesOnDataErrors=True}"/>
+            </StackPanel>
+            <StackPanel>
+                <Label Content="Цель съемки"/>
+                <TextBox Text="{Binding ShootingPurpose, ValidatesOnDataErrors=True}"/>
+            </StackPanel>
+            <StackPanel >
+                <Label Content="Дата начала съемки "/>
+                <DatePicker SelectedDate="{Binding Start}"/>
+            </StackPanel>
+            <StackPanel>
+                <Label Content="Дата окончания съемки "/>
+                <DatePicker SelectedDate="{Binding End}"/>
+            </StackPanel>
+            <StackPanel>
+                <Label Content="Сотрудник выдавший разрешение"/>
+                <StackPanel Orientation="Horizontal" Style="{StaticResource ResourceKey=errorIdent}">
+                    <ComboBox  ItemsSource="{Binding Employees}" 
+                        Text="{Binding ShootingAllowed.Name, Mode=OneWay}" 
+                        SelectedItem="{Binding ShootingAllowed, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" 
+                        SelectedIndex="{Binding ShootingAllowed.Sel, Mode=OneWayToSource}" />
+                    <Button DataContext="{Binding InitEmployee}" Style="{StaticResource EditButton}" />
+                    <Button DataContext="{Binding InitEmployee}" Style="{StaticResource NewItemButton}"/>
+                    <Button DataContext="{Binding InitEmployee}" Style="{StaticResource DeleteItemButton}"/>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel>
+                <Label Content="Оьъект съемки"/>
+                <StackPanel Orientation="Horizontal" Style="{StaticResource ResourceKey=errorIdent}">
+                    <ComboBox  ItemsSource="{Binding StationFacilities}" 
+                        Text="{Binding SubjectOfShooting.Name, Mode=OneWay}" 
+                        SelectedItem="{Binding SubjectOfShooting, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, ValidatesOnDataErrors=True}" 
+                        SelectedIndex="{Binding SubjectOfShooting.Sel, Mode=OneWayToSource}"/>
+                    <Button DataContext="{Binding EditStationFacility}" Style="{StaticResource EditButton}" />
+                    <Button DataContext="{Binding EditStationFacility}" Style="{StaticResource NewItemButton}"/>
+                    <Button DataContext="{Binding EditStationFacility}" Style="{StaticResource DeleteItemButton}"/>
+                </StackPanel>
+            </StackPanel>
+        </WrapPanel>
+        <StackPanel Orientation="Horizontal" Height="27">
+            <Button Command="{Binding SaveLocalCommand}" CommandParameter="{Binding}" Click="Button_Click">Сохранить</Button>
+            <Button Click="Button_Click">Отмена</Button>
+        </StackPanel>
+    </StackPanel>
+</Window>

@@ -1,0 +1,22 @@
+C:\Users\Ириша\source\repos\ira\ira\bin\Release\ira.exe.config
+C:\Users\Ириша\source\repos\ira\ira\bin\Release\ira.exe
+C:\Users\Ириша\source\repos\ira\ira\bin\Release\ira.pdb
+C:\Users\Ириша\source\repos\ira\ira\obj\Release\ira.csprojAssemblyReference.cache
+C:\Users\Ириша\source\repos\ira\ira\obj\Release\ira.csproj.ResolveComReference.cache
+C:\Users\Ириша\source\repos\ira\ira\obj\Release\terapevt.Form1.resources
+C:\Users\Ириша\source\repos\ira\ira\obj\Release\ira.Properties.Resources.resources
+C:\Users\Ириша\source\repos\ira\ira\obj\Release\ira.csproj.GenerateResource.cache
+C:\Users\Ириша\source\repos\ira\ira\obj\Release\ira.csproj.CoreCompileInputs.cache
+C:\Users\Ириша\source\repos\ira\ira\obj\Release\ira.exe
+C:\Users\Ириша\source\repos\ira\ira\obj\Release\ira.pdb
+C:\Users\коля\Desktop\ira\ira\bin\Release\курсовой проект.exe.config
+C:\Users\коля\Desktop\ira\ira\bin\Release\курсовой проект.exe
+C:\Users\коля\Desktop\ira\ira\bin\Release\курсовой проект.pdb
+C:\Users\коля\Desktop\ira\ira\obj\Release\ira.csprojAssemblyReference.cache
+C:\Users\коля\Desktop\ira\ira\obj\Release\ira.csproj.ResolveComReference.cache
+C:\Users\коля\Desktop\ira\ira\obj\Release\terapevt.Form1.resources
+C:\Users\коля\Desktop\ira\ira\obj\Release\terapevt.Properties.Resources.resources
+C:\Users\коля\Desktop\ira\ira\obj\Release\ira.csproj.GenerateResource.cache
+C:\Users\коля\Desktop\ira\ira\obj\Release\ira.csproj.CoreCompileInputs.cache
+C:\Users\коля\Desktop\ira\ira\obj\Release\курсовой проект.exe
+C:\Users\коля\Desktop\ira\ira\obj\Release\курсовой проект.pdb

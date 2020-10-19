@@ -1,0 +1,55 @@
+﻿<Window x:Class="visiterStaton.View.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:visiterStaton.View"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <WrapPanel>
+                <StackPanel>
+                    <TextBlock Text="Поиск по имени"></TextBlock>
+                    <TextBox Text="{Binding NameFilter, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+                </StackPanel>
+                <StackPanel>
+                    <TextBlock Text="Временный пропуск"></TextBlock>
+                    <CheckBox HorizontalAlignment="Center" IsChecked="{Binding ConteinsActualTemporyPas}"></CheckBox>
+                </StackPanel>
+                <StackPanel>
+                    <TextBlock Text="Разовый пропуск" Margin="5,0,0,0"></TextBlock>
+                    <CheckBox HorizontalAlignment="Center" IsChecked="{Binding ConteinsActualSinglePass}"></CheckBox>
+                </StackPanel>
+                <StackPanel>
+                    <TextBlock Text="Разрешение на съемку"  Margin="5,0,0,0"></TextBlock>
+                    <CheckBox HorizontalAlignment="Center" IsChecked="{Binding ConteinsActualShootingPer}" ></CheckBox>
+                </StackPanel>
+            </WrapPanel>
+            <Expander Header="Визитеры">
+                <StackPanel>
+                    <DataGrid ItemsSource="{Binding Visitors}" AutoGenerateColumns="False" SelectedItem="{Binding Visitor}" CanUserAddRows="False">
+                        <DataGrid.Columns >
+                            <DataGridTextColumn Header="Фамилия" Binding="{Binding LastName}"></DataGridTextColumn>
+                            <DataGridTextColumn Header="Имя" Binding="{Binding Name}"></DataGridTextColumn>
+                            <DataGridTextColumn Header="Разрешение на съемку" Binding="{Binding CurrentSP}"></DataGridTextColumn>
+                            <DataGridTextColumn Header="Временный пропуск" Binding="{Binding CurrentTP}"></DataGridTextColumn>
+                            <DataGridTextColumn Header="Разовый пропуск" Binding="{Binding CurrentSingleP}"></DataGridTextColumn>
+                            <DataGridTemplateColumn>
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Button Content="Удалить"  Command="{Binding DeleteCommand}" CommandParameter="{Binding EditableVisitor}" Background="#FFE4ACAC" />
+                                            <Button Content="Изменить" Command="{Binding EditCommand}" CommandParameter="{Binding EditableVisitor}" />
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <Button Content="Добавить" Command="{Binding AddNewItem}" CommandParameter="{Binding EditableVisitor}" Click="Button_Click"/>
+                </StackPanel>
+            </Expander>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,11 @@
+C:\Users\коля\Desktop\kursovoi\ira\bin\Debug\курсовой проект.exe.config
+C:\Users\коля\Desktop\kursovoi\ira\bin\Debug\курсовой проект.exe
+C:\Users\коля\Desktop\kursovoi\ira\bin\Debug\курсовой проект.pdb
+C:\Users\коля\Desktop\kursovoi\ira\obj\Debug\kursovoi proekt.csprojAssemblyReference.cache
+C:\Users\коля\Desktop\kursovoi\ira\obj\Debug\kursovoi proekt.csproj.ResolveComReference.cache
+C:\Users\коля\Desktop\kursovoi\ira\obj\Debug\terapevt.Form1.resources
+C:\Users\коля\Desktop\kursovoi\ira\obj\Debug\terapevt.Properties.Resources.resources
+C:\Users\коля\Desktop\kursovoi\ira\obj\Debug\kursovoi proekt.csproj.GenerateResource.cache
+C:\Users\коля\Desktop\kursovoi\ira\obj\Debug\kursovoi proekt.csproj.CoreCompileInputs.cache
+C:\Users\коля\Desktop\kursovoi\ira\obj\Debug\курсовой проект.exe
+C:\Users\коля\Desktop\kursovoi\ira\obj\Debug\курсовой проект.pdb

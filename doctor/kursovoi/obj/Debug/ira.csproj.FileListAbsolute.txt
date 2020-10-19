@@ -1,0 +1,11 @@
+C:\Users\Ириша\source\repos\ira\ira\bin\Debug\ira.exe.config
+C:\Users\Ириша\source\repos\ira\ira\bin\Debug\ira.exe
+C:\Users\Ириша\source\repos\ira\ira\bin\Debug\ira.pdb
+C:\Users\Ириша\source\repos\ira\ira\obj\Debug\ira.csprojAssemblyReference.cache
+C:\Users\Ириша\source\repos\ira\ira\obj\Debug\ira.Properties.Resources.resources
+C:\Users\Ириша\source\repos\ira\ira\obj\Debug\ira.csproj.GenerateResource.cache
+C:\Users\Ириша\source\repos\ira\ira\obj\Debug\ira.csproj.CoreCompileInputs.cache
+C:\Users\Ириша\source\repos\ira\ira\obj\Debug\ira.exe
+C:\Users\Ириша\source\repos\ira\ira\obj\Debug\ira.pdb
+C:\Users\Ириша\source\repos\ira\ira\obj\Debug\ira.csproj.ResolveComReference.cache
+C:\Users\Ириша\source\repos\ira\ira\obj\Debug\terapevt.Form1.resources

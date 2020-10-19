@@ -1,0 +1,73 @@
+﻿<Application x:Class="visiterStaton.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:visiterStaton">
+    <Application.Resources>
+         <Style  x:Key="errorIdent">
+            <Style.Triggers>
+                <Trigger Property="Validation.HasError" Value="True">
+                    <Setter Property="Control.ToolTip"
+                Value="{Binding RelativeSource={RelativeSource Self},
+                    Path=(Validation.Errors)[0].ErrorContent}" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <Style TargetType="ComboBox" BasedOn="{StaticResource errorIdent}">
+            <Setter Property="IsTextSearchEnabled" Value="False"></Setter>
+            <Setter Property="StaysOpenOnEdit" Value="True"></Setter>
+            <Setter Property="IsEditable" Value="True"></Setter>
+            <Setter Property="MinWidth" Value="150"></Setter>
+            <Setter Property="IsSynchronizedWithCurrentItem" Value="true"></Setter>
+            <EventSetter Event="GotFocus" Handler="CBdocktype_GotFocus"></EventSetter>
+            <EventSetter Event="KeyUp" Handler="ComboBox_KeyUp"></EventSetter>
+            <Setter Property="Margin" Value="10,0,0,0"></Setter>
+        </Style>
+        <Style x:Key="ButtonWithComboBox">
+            <Setter Property="Button.CommandParameter" Value="{Binding}" ></Setter>
+            <Setter Property="Button.MinWidth" Value="15"></Setter>
+        </Style>
+        <Style x:Key="EditButton" BasedOn="{StaticResource ButtonWithComboBox}">
+            <Setter Property="Button.Command" Value="{Binding EditCommand}"></Setter>
+            <Setter Property="Button.ContentTemplate">
+                <Setter.Value>
+                    <DataTemplate>
+                        <Image Source="pack://application:,,,/Resources/pen.png"  Width="10"></Image>
+                    </DataTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="NewItemButton" BasedOn="{StaticResource ButtonWithComboBox}">
+            <Setter Property="Button.Command" Value="{Binding AddNewItem}"></Setter>
+            <Setter Property="Button.ContentTemplate">
+                <Setter.Value>
+                    <DataTemplate>
+                        <Image Source="pack://application:,,,/Resources/plus.png"  Width="10"></Image>
+                    </DataTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="DeleteItemButton" BasedOn="{StaticResource ButtonWithComboBox}">
+            <Setter Property="Button.ContentTemplate">
+                <Setter.Value>
+                    <DataTemplate>
+                        <Image Source="pack://application:,,,/Resources/minus.png"  Width="10"></Image>
+                    </DataTemplate>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Button.Command" Value="{Binding DeleteCommand}"></Setter>
+        </Style>
+        <Style TargetType="TextBox" BasedOn="{StaticResource errorIdent}">
+            <Setter Property="MaxWidth" Value="100"></Setter>
+            <Setter Property="HorizontalAlignment" Value="Left"></Setter>
+            <Setter Property="MinWidth"  Value="300"></Setter>
+            <Setter Property="MinHeight" Value="20"></Setter>
+            <Setter Property="Margin" Value="10,0,0,0"></Setter>
+        </Style>
+        <Style TargetType="Expander">
+            <Setter Property="IsExpanded" Value="True"></Setter>
+        </Style>
+        <Style TargetType="DatePicker">
+            <Setter Property="Margin" Value="10,0,0,0" ></Setter>
+        </Style>
+    </Application.Resources>
+</Application>

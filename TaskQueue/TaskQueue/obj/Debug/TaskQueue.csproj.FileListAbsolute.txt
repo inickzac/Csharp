@@ -1,0 +1,14 @@
+C:\Users\коля\source\repos\TaskQueue\TaskQueue\bin\Debug\TaskQueue.exe.config
+C:\Users\коля\source\repos\TaskQueue\TaskQueue\bin\Debug\TaskQueue.exe
+C:\Users\коля\source\repos\TaskQueue\TaskQueue\bin\Debug\TaskQueue.pdb
+C:\Users\коля\source\repos\TaskQueue\TaskQueue\obj\Debug\TaskQueue.csprojAssemblyReference.cache
+C:\Users\коля\source\repos\TaskQueue\TaskQueue\obj\Debug\TaskQueue.csproj.CoreCompileInputs.cache
+C:\Users\коля\source\repos\TaskQueue\TaskQueue\obj\Debug\TaskQueue.exe
+C:\Users\коля\source\repos\TaskQueue\TaskQueue\obj\Debug\TaskQueue.pdb
+\\DESKTOP-5APC8Q0\dow\source\repos\TaskQueue\TaskQueue\bin\Debug\TaskQueue.exe.config
+\\DESKTOP-5APC8Q0\dow\source\repos\TaskQueue\TaskQueue\bin\Debug\TaskQueue.exe
+\\DESKTOP-5APC8Q0\dow\source\repos\TaskQueue\TaskQueue\bin\Debug\TaskQueue.pdb
+\\DESKTOP-5APC8Q0\dow\source\repos\TaskQueue\TaskQueue\obj\Debug\TaskQueue.csprojAssemblyReference.cache
+\\DESKTOP-5APC8Q0\dow\source\repos\TaskQueue\TaskQueue\obj\Debug\TaskQueue.csproj.CoreCompileInputs.cache
+\\DESKTOP-5APC8Q0\dow\source\repos\TaskQueue\TaskQueue\obj\Debug\TaskQueue.exe
+\\DESKTOP-5APC8Q0\dow\source\repos\TaskQueue\TaskQueue\obj\Debug\TaskQueue.pdb

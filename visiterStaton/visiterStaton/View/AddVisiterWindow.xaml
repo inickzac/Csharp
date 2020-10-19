@@ -1,0 +1,180 @@
+﻿<Window x:Class="visiterStaton.VisiterWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+
+        xmlns:local="clr-namespace:visiterStaton"
+        mc:Ignorable="d"
+        Title="AddVisiterWindow" Height="659.252" Width="769.63">
+
+
+    <Window.Resources>
+
+    </Window.Resources>
+    <ScrollViewer>
+        <Grid  >
+            <StackPanel>
+                <WrapPanel>
+                    <StackPanel>
+                        <Label>Имя</Label>
+                        <TextBox  Text="{Binding Name, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+                    </StackPanel>
+                    <StackPanel>
+                        <Label>Фамилия</Label>
+                        <TextBox  Text="{Binding LastName, ValidatesOnDataErrors=True}"></TextBox>
+                    </StackPanel>
+                    <StackPanel>
+                        <Label>Должность</Label>
+                        <TextBox  Text="{Binding Position, ValidatesOnDataErrors=True}"></TextBox>
+                    </StackPanel>
+                </WrapPanel>
+                <Expander Header="Документ" DataContext="{Binding Document}">
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <StackPanel>
+                                <Label>Серия</Label>
+                                <TextBox Text="{Binding Series, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+                            </StackPanel>
+                            <StackPanel>
+                                <Label>Номер</Label>
+                                <TextBox Text="{Binding Number, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}" Margin="10,0,0,0" ></TextBox>
+                            </StackPanel>
+                        </StackPanel>
+                        <StackPanel>
+                            <Label>Дата выдачи</Label>
+                            <DatePicker SelectedDate="{Binding Date_of_issue}" Loaded="DatePicker_Loaded" MaxWidth="300" HorizontalAlignment="Left"></DatePicker>
+                        </StackPanel>
+                        <WrapPanel Orientation="Horizontal">
+                            <StackPanel>
+                                <Label Content="Тип документа"/>
+                                <StackPanel Orientation="Horizontal">
+                                    <StackPanel Orientation="Horizontal">
+                                        <ComboBox  ItemsSource="{Binding DocumentTypes}" 
+                                               Text="{Binding DocumentType.Name, Mode=OneWay}" 
+                                               DisplayMemberPath="Name" 
+                                               SelectedItem="{Binding DocumentType, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged ,ValidatesOnDataErrors=True}" 
+                                               SelectedIndex="{Binding DocumentType.Sel, Mode=OneWayToSource }" />
+                                        <Button DataContext="{Binding NewdocumentType}" Style="{StaticResource EditButton}"/>
+                                        <Button DataContext="{Binding NewdocumentType}" Style="{StaticResource NewItemButton}"/>
+                                        <Button DataContext="{Binding NewdocumentType}" Style="{StaticResource DeleteItemButton}"/>
+                                    </StackPanel>
+                                </StackPanel>
+                            </StackPanel>
+                            <StackPanel>
+                                <Label Content="Орган выдавший документ"/>
+                                <StackPanel Orientation="Horizontal" Style="{StaticResource ResourceKey=errorIdent }">
+                                    <ComboBox  ItemsSource="{Binding IssuingAuthoritys}" 
+                                    Text="{Binding IssuingAuthority.Name, Mode=OneWay}" 
+                                    DisplayMemberPath="Name" 
+                                    SelectedItem="{Binding IssuingAuthority, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged ,ValidatesOnDataErrors=True}" 
+                                    SelectedIndex="{Binding IssuingAuthority.Sel, Mode=OneWayToSource}">
+                                    </ComboBox>
+                                    <Button DataContext="{Binding EditableIssuingAuthority}" Style="{StaticResource EditButton}"/>
+                                    <Button DataContext="{Binding EditableIssuingAuthority}" Style="{StaticResource NewItemButton}"/>
+                                    <Button DataContext="{Binding EditableIssuingAuthority}" Style="{StaticResource DeleteItemButton}"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </WrapPanel>
+                    </StackPanel>
+                </Expander>
+                <WrapPanel>
+                    <StackPanel>
+                        <TextBlock Text="Место работы"></TextBlock>
+                        <StackPanel Orientation="Horizontal" Style="{StaticResource ResourceKey=errorIdent}">
+                            <ComboBox  ItemsSource="{Binding Organizations}" 
+                                    Text="{Binding Organization.Name, Mode=OneWay}" 
+                                    DisplayMemberPath="Name" 
+                                    SelectedItem="{Binding Organization,ValidatesOnDataErrors=True, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
+                                    SelectedIndex="{Binding Organization.Sel, Mode=OneWayToSource}">
+                            </ComboBox>
+                            <Button DataContext="{Binding EditableOrganization}" Style="{StaticResource EditButton}"/>
+                            <Button DataContext="{Binding EditableOrganization}" Style="{StaticResource NewItemButton}"/>
+                            <Button DataContext="{Binding EditableOrganization}" Style="{StaticResource DeleteItemButton}"/>
+                        </StackPanel>
+                    </StackPanel>
+                </WrapPanel>
+                <Expander Header="Разрешение на съмку">
+                    <StackPanel>
+                        <DataGrid ItemsSource="{Binding ShootingPermissions}" AutoGenerateColumns="False" SelectedItem="{Binding ShootingPermission}" Name="c1DataGrid1">
+                            <DataGrid.Columns >
+                                <DataGridTextColumn Header="Тип камеры" Binding="{Binding CameraType}"></DataGridTextColumn>
+                                <DataGridTextColumn Header="Разрешение выдал" Binding="{Binding ShootingAllowed}"></DataGridTextColumn>
+                                <DataGridTextColumn Header="Обьект съемки" Binding="{Binding SubjectOfShooting}"></DataGridTextColumn>
+                                <DataGridTextColumn Header="Дата начала съемки" Binding="{Binding Start}"></DataGridTextColumn>
+                                <DataGridTextColumn Header="Дата окончания съемки" Binding="{Binding End}"></DataGridTextColumn>
+                                <DataGridTextColumn Header="Цель съемки" Binding="{Binding ShootingPurpose}"></DataGridTextColumn>
+                                <DataGridTemplateColumn>
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Horizontal">
+                                                <Button Content="Удалить"  Command="{Binding DeleteCommand}" CommandParameter="{Binding EditableShootingPermission}" Background="#FFE4ACAC" />
+                                                <Button Content="Изменить" Command="{Binding EditCommand}" CommandParameter="{Binding EditableShootingPermission}" />
+                                                <Button Content="Генерировать документ" Command="{Binding DocumentGenerate}" CommandParameter="{Binding DocumentTP}" />
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        <Button Content="Добавить" Command="{Binding AddNewItem}" CommandParameter="{Binding EditableShootingPermission}" Click="Button_Click_2"/>
+                    </StackPanel>
+                </Expander>
+                <Expander Header="Временный пропуск">
+                    <StackPanel>
+                        <DataGrid ItemsSource="{Binding TemporarPasses}" AutoGenerateColumns="False" SelectedItem="{Binding TemporarPass}" >
+                            <DataGrid.Columns >
+                                <DataGridTextColumn Header="Разрешение выдал" Binding="{Binding PassIssued}"></DataGridTextColumn>
+                                <DataGridTextColumn Header="Дата начала действия" Binding="{Binding ValidWith}"></DataGridTextColumn>
+                                <DataGridTextColumn Header="Дата окончания действия" Binding="{Binding ValidUntil}"></DataGridTextColumn>
+                                <DataGridTextColumn Header="Цель выдачи" Binding="{Binding PurposeOfIssuance}"></DataGridTextColumn>
+                                <DataGridTemplateColumn>
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Horizontal">
+                                                <Button Content="Удалить"  Command="{Binding DeleteCommand}" CommandParameter="{Binding EditabletemporarPass}" Background="#FFE4ACAC" />
+                                                <Button Content="Изменить" Command="{Binding EditCommand}" CommandParameter="{Binding EditabletemporarPass}" />
+                                                <Button Content="Генерировать документ" Command="{Binding DocumentGenerate}" CommandParameter="{Binding DocumentTP}" />
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        <Button Content="Добавить" Command="{Binding AddNewItem}" CommandParameter="{Binding EditabletemporarPass}" Click="Button_Click_1"/>
+                    </StackPanel>
+                </Expander>
+                <Expander Header="Разовый пропуск">
+                    <StackPanel>
+                        <DataGrid ItemsSource="{Binding SinglePasses}" AutoGenerateColumns="False" SelectedItem="{Binding SinglePass}" >
+                            <DataGrid.Columns >
+                                <DataGridTextColumn Header="Разрешение выдал" Binding="{Binding SinglePassIssued}"></DataGridTextColumn>
+                                <DataGridTextColumn Header="Дата начала действия" Binding="{Binding PassIssued}"></DataGridTextColumn>
+                                <DataGridTextColumn Header="Дата окончания действия" Binding="{Binding ValidUntil}"></DataGridTextColumn>
+                                <DataGridTextColumn Header="Цель выдачи" Binding="{Binding PurposeOfIssuance}"></DataGridTextColumn>
+                                <DataGridTextColumn Header="Сопровождающий" Binding="{Binding Accompanying}"></DataGridTextColumn>
+                                <DataGridTemplateColumn>
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <StackPanel Orientation="Horizontal">
+                                                <Button Content="Удалить"  Command="{Binding DeleteCommand}" CommandParameter="{Binding EditableSinglePass}" Background="#FFE4ACAC" />
+                                                <Button Content="Изменить" Command="{Binding EditCommand}" CommandParameter="{Binding EditableSinglePass}" />
+                                                <Button Content="Генерировать документ" Command="{Binding DocumentGenerate}" CommandParameter="{Binding DocumentTP}" />
+                                            </StackPanel>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        <Button Content="Добавить" Command="{Binding AddNewItem}" CommandParameter="{Binding EditableSinglePass}" Click="Button_Click_1"/>
+                        
+                    </StackPanel>
+                </Expander>
+                <StackPanel Orientation="Horizontal">
+                    <Button Command="{Binding SaveCommand}" CommandParameter="{Binding}" >Сохранить</Button>
+                    <Button Click="Button_Click_1">Отмена</Button>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+    </ScrollViewer>
+</Window>

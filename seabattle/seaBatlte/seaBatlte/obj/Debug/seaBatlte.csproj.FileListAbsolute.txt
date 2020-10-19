@@ -1,0 +1,60 @@
+C:\Users\Ирина\Desktop\КП\seaBatlte\seaBatlte\bin\Debug\seaBatlte.exe.config
+C:\Users\Ирина\Desktop\КП\seaBatlte\seaBatlte\bin\Debug\seaBatlte.exe
+C:\Users\Ирина\Desktop\КП\seaBatlte\seaBatlte\bin\Debug\seaBatlte.pdb
+C:\Users\Ирина\Desktop\КП\seaBatlte\seaBatlte\obj\Debug\seaBatlte.csprojAssemblyReference.cache
+C:\Users\Ирина\Desktop\КП\seaBatlte\seaBatlte\obj\Debug\seaBatlte.Properties.Resources.resources
+C:\Users\Ирина\Desktop\КП\seaBatlte\seaBatlte\obj\Debug\seaBatlte.csproj.GenerateResource.cache
+C:\Users\Ирина\Desktop\КП\seaBatlte\seaBatlte\obj\Debug\seaBatlte.csproj.CoreCompileInputs.cache
+C:\Users\Ирина\Desktop\КП\seaBatlte\seaBatlte\obj\Debug\seaBatlte.exe
+C:\Users\Ирина\Desktop\КП\seaBatlte\seaBatlte\obj\Debug\seaBatlte.pdb
+C:\Users\коля\Desktop\КП\seaBatlte\seaBatlte\bin\Debug\seaBatlte.exe.config
+C:\Users\коля\Desktop\КП\seaBatlte\seaBatlte\bin\Debug\seaBatlte.exe
+C:\Users\коля\Desktop\КП\seaBatlte\seaBatlte\bin\Debug\seaBatlte.pdb
+C:\Users\коля\Desktop\КП\seaBatlte\seaBatlte\obj\Debug\seaBatlte.csprojAssemblyReference.cache
+C:\Users\коля\Desktop\КП\seaBatlte\seaBatlte\obj\Debug\seaBatlteСlient.Client.resources
+C:\Users\коля\Desktop\КП\seaBatlte\seaBatlte\obj\Debug\seaBatlte.Properties.Resources.resources
+C:\Users\коля\Desktop\КП\seaBatlte\seaBatlte\obj\Debug\seaBatlte.csproj.GenerateResource.cache
+C:\Users\коля\Desktop\КП\seaBatlte\seaBatlte\obj\Debug\seaBatlte.csproj.CoreCompileInputs.cache
+C:\Users\коля\Desktop\КП\seaBatlte\seaBatlte\obj\Debug\seaBatlte.exe
+C:\Users\коля\Desktop\КП\seaBatlte\seaBatlte\obj\Debug\seaBatlte.pdb
+C:\Users\Ирина\Desktop\КП\seaBatlte\seaBatlte\obj\Debug\seaBatlteСlient.ClientForm.resources
+C:\Users\Ирина\OneDrive - bsuir.by\КП\seaBatlte\seaBatlte\bin\Debug\seaBatlte.exe.config
+C:\Users\Ирина\OneDrive - bsuir.by\КП\seaBatlte\seaBatlte\bin\Debug\seaBatlte.exe
+C:\Users\Ирина\OneDrive - bsuir.by\КП\seaBatlte\seaBatlte\bin\Debug\seaBatlte.pdb
+C:\Users\Ирина\OneDrive - bsuir.by\КП\seaBatlte\seaBatlte\obj\Debug\seaBatlte.csprojAssemblyReference.cache
+C:\Users\Ирина\OneDrive - bsuir.by\КП\seaBatlte\seaBatlte\obj\Debug\seaBatlteСlient.ClientForm.resources
+C:\Users\Ирина\OneDrive - bsuir.by\КП\seaBatlte\seaBatlte\obj\Debug\seaBatlte.Properties.Resources.resources
+C:\Users\Ирина\OneDrive - bsuir.by\КП\seaBatlte\seaBatlte\obj\Debug\seaBatlte.csproj.GenerateResource.cache
+C:\Users\Ирина\OneDrive - bsuir.by\КП\seaBatlte\seaBatlte\obj\Debug\seaBatlte.csproj.CoreCompileInputs.cache
+C:\Users\Ирина\OneDrive - bsuir.by\КП\seaBatlte\seaBatlte\obj\Debug\seaBatlte.exe
+C:\Users\Ирина\OneDrive - bsuir.by\КП\seaBatlte\seaBatlte\obj\Debug\seaBatlte.pdb
+C:\Users\коля\OneDrive - bsuir.by\КП\seaBatlte\seaBatlte\obj\Debug\seaBatlte.csprojAssemblyReference.cache
+C:\Users\коля\OneDrive - bsuir.by\КП\seaBatlte\seaBatlte\obj\Debug\seaBatlteСlient.ClientForm.resources
+C:\Users\коля\OneDrive - bsuir.by\КП\seaBatlte\seaBatlte\obj\Debug\seaBatlte.Properties.Resources.resources
+C:\Users\коля\OneDrive - bsuir.by\КП\seaBatlte\seaBatlte\obj\Debug\seaBatlte.csproj.GenerateResource.cache
+C:\Users\коля\OneDrive - bsuir.by\КП\seaBatlte\seaBatlte\obj\Debug\seaBatlte.csproj.CoreCompileInputs.cache
+C:\Users\коля\OneDrive - bsuir.by\КП\seaBatlte\seaBatlte\obj\Debug\seaBatlte.exe
+C:\Users\коля\OneDrive - bsuir.by\КП\seaBatlte\seaBatlte\obj\Debug\seaBatlte.pdb
+C:\Users\коля\OneDrive - bsuir.by\КП\seaBatlte\seaBatlte\bin\Debug\seaBatlte.exe.config
+C:\Users\коля\OneDrive - bsuir.by\КП\seaBatlte\seaBatlte\bin\Debug\seaBatlte.exe
+C:\Users\коля\OneDrive - bsuir.by\КП\seaBatlte\seaBatlte\bin\Debug\seaBatlte.pdb
+C:\Users\коля\Desktop\seaBatlte\seaBatlte\bin\Debug\seaBatlte.exe.config
+C:\Users\коля\Desktop\seaBatlte\seaBatlte\bin\Debug\seaBatlte.exe
+C:\Users\коля\Desktop\seaBatlte\seaBatlte\bin\Debug\seaBatlte.pdb
+C:\Users\коля\Desktop\seaBatlte\seaBatlte\obj\Debug\seaBatlte.csprojAssemblyReference.cache
+C:\Users\коля\Desktop\seaBatlte\seaBatlte\obj\Debug\seaBatlteСlient.ClientForm.resources
+C:\Users\коля\Desktop\seaBatlte\seaBatlte\obj\Debug\seaBatlte.Properties.Resources.resources
+C:\Users\коля\Desktop\seaBatlte\seaBatlte\obj\Debug\seaBatlte.csproj.GenerateResource.cache
+C:\Users\коля\Desktop\seaBatlte\seaBatlte\obj\Debug\seaBatlte.csproj.CoreCompileInputs.cache
+C:\Users\коля\Desktop\seaBatlte\seaBatlte\obj\Debug\seaBatlte.exe
+C:\Users\коля\Desktop\seaBatlte\seaBatlte\obj\Debug\seaBatlte.pdb
+C:\Users\Ирина\Desktop\seaBatlte\seaBatlte\bin\Debug\seaBatlte.exe.config
+C:\Users\Ирина\Desktop\seaBatlte\seaBatlte\bin\Debug\seaBatlte.exe
+C:\Users\Ирина\Desktop\seaBatlte\seaBatlte\bin\Debug\seaBatlte.pdb
+C:\Users\Ирина\Desktop\seaBatlte\seaBatlte\obj\Debug\seaBatlte.csprojAssemblyReference.cache
+C:\Users\Ирина\Desktop\seaBatlte\seaBatlte\obj\Debug\seaBatlteСlient.ClientForm.resources
+C:\Users\Ирина\Desktop\seaBatlte\seaBatlte\obj\Debug\seaBatlte.Properties.Resources.resources
+C:\Users\Ирина\Desktop\seaBatlte\seaBatlte\obj\Debug\seaBatlte.csproj.GenerateResource.cache
+C:\Users\Ирина\Desktop\seaBatlte\seaBatlte\obj\Debug\seaBatlte.csproj.CoreCompileInputs.cache
+C:\Users\Ирина\Desktop\seaBatlte\seaBatlte\obj\Debug\seaBatlte.exe
+C:\Users\Ирина\Desktop\seaBatlte\seaBatlte\obj\Debug\seaBatlte.pdb

@@ -1,0 +1,39 @@
+﻿<Window x:Class="visiterStaton.View.AddAmployee"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:visiterStaton.View"
+        mc:Ignorable="d"
+        Title="AddAmployee" Height="220.189" Width="319.663">
+    <Grid>
+        <StackPanel>
+            <StackPanel>
+                <TextBlock Text="Имя"></TextBlock>
+                <TextBox Text="{Binding FirstName}" Margin="0"></TextBox>
+                <TextBlock Text="Фамилия"></TextBlock>
+                <TextBox Text="{Binding LastName}" Margin="0"></TextBox>
+                <TextBlock Text="Должность"></TextBlock>
+                <TextBox Text="{Binding Position}" Margin="0"></TextBox>
+                <StackPanel Margin="0,0,0,0">
+                    <Label Content="Отдел"/>
+                    <StackPanel Orientation="Horizontal" Style="{StaticResource ResourceKey=errorIdent }">
+                        <ComboBox  ItemsSource="{Binding Departments}" 
+                                    Text="{Binding Department.Name, Mode=OneWay}" 
+                                    DisplayMemberPath="Name" 
+                                    SelectedItem="{Binding Department, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged ,ValidatesOnDataErrors=True}" 
+                                    SelectedIndex="{Binding Department.Sel, Mode=OneWayToSource}" Margin="0" >
+                        </ComboBox>
+                        <Button DataContext="{Binding EditableDepartment}" Style="{StaticResource EditButton}" Click="Button_Click"/>
+                        <Button DataContext="{Binding EditableDepartment}" Style="{StaticResource NewItemButton}"/>
+                        <Button DataContext="{Binding EditableDepartment}" Style="{StaticResource DeleteItemButton}"/>
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Button Command="{Binding SaveCommand}" CommandParameter="{Binding}">Сохранить</Button>
+                    <Button>Отмена</Button>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

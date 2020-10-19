@@ -1,0 +1,4 @@
+﻿[*.cs]
+
+# CA2100: Проверка запросов SQL на уязвимости безопасности
+dotnet_diagnostic.CA2100.severity = none
